@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug hash_generator",
+            "program": "${workspaceFolder:hash_generator}/.build/debug/hash_generator",
+            "args": [],
+            "cwd": "${workspaceFolder:hash_generator}",
+            "preLaunchTask": "swift: Build Debug hash_generator"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release hash_generator",
+            "program": "${workspaceFolder:hash_generator}/.build/release/hash_generator",
+            "args": [],
+            "cwd": "${workspaceFolder:hash_generator}",
+            "preLaunchTask": "swift: Build Release hash_generator"
+        }
+    ]
+}
