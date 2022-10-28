@@ -65,7 +65,7 @@ public struct hash_generator {
         jsonString += "}"
 
         do {
-            try jsonString.write(toFile: "/code/hash_generator/hash_data2.json",
+            try jsonString.write(toFile: "./hash_data2.json",
                 atomically: true,
                 encoding: .utf8)
         } 
