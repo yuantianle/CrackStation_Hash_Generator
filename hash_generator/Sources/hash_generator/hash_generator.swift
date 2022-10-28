@@ -43,7 +43,9 @@ public struct hash_generator {
     //POC V2
     public func json_generator(){
         var jsonString = "{\n"
-
+        for c: Character in "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" {
+            jsonString += "   \"\(encryptUsingSha1(from: String(c)).suffix(40))\": \"\(String(c))\",\n"
+        }
         var str = ""
         var number = 1; //1->3844
         for i in "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" {
