@@ -1,3 +1,3 @@
-# hash_generator
+# HashGenerator
 
 A description of this package.

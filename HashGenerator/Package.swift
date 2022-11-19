@@ -5,7 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "HashGenerator",
-    platforms: [.macOS(.v10_15)],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -17,7 +16,7 @@ let package = Package(
         .executableTarget(
             name: "HashGenerator",
             dependencies: [
-              .product(name: "Crypto", package: "swift-crypto"),
+                .product(name: "Crypto", package: "swift-crypto"),
             ]),
         .testTarget(
             name: "HashGeneratorTests",
